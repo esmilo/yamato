@@ -1,3 +1,5 @@
+const trimmer = require('../lib/trimmer');
+
 describe('trimmer function tests', function () {
   it('should trim strings inside an object', function () {
     const payload = {
@@ -5,6 +7,7 @@ describe('trimmer function tests', function () {
       phoneNumber: '+6281234567890 ',
       address: ' Somewhere on earth      ',
       followers: 666,
+      bio: null,
     };
 
     expect(trimmer(payload)).toStrictEqual({
@@ -12,6 +15,7 @@ describe('trimmer function tests', function () {
       phoneNumber: '+6281234567890',
       address: 'Somewhere on earth',
       followers: 666,
+      bio: null,
     });
   });
 
@@ -42,6 +46,7 @@ describe('trimmer function tests', function () {
       followers: [
         {
           name: 'Sergei ',
+          bio: null,
           personalInfo: {
             address: '   Somewhere on earth',
             phoneNumber: ' +7 123-45-67   ',
@@ -49,6 +54,7 @@ describe('trimmer function tests', function () {
         },
         {
           name: '    Bogdan ',
+          bio: null,
           personalInfo: {
             address: '   Somewhere on earth     ',
             phoneNumber: ' +7 123-45-68   ',
@@ -62,6 +68,7 @@ describe('trimmer function tests', function () {
       followers: [
         {
           name: 'Sergei',
+          bio: null,
           personalInfo: {
             address: 'Somewhere on earth',
             phoneNumber: '+7 123-45-67',
@@ -69,6 +76,7 @@ describe('trimmer function tests', function () {
         },
         {
           name: 'Bogdan',
+          bio: null,
           personalInfo: {
             address: 'Somewhere on earth',
             phoneNumber: '+7 123-45-68',
