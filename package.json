@@ -1,0 +1,29 @@
+{
+  "name": "yamato",
+  "version": "1.0.0",
+  "description": " Express middleware to trim request body",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esmilo/yamato.git"
+  },
+  "keywords": [
+    "express middleware",
+    "trim request body",
+    "trim body",
+    "request body trimmer",
+    "body trimmer"
+  ],
+  "author": "Dimitri Wahyudiputra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esmilo/yamato/issues"
+  },
+  "homepage": "https://github.com/esmilo/yamato#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
