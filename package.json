@@ -1,7 +1,7 @@
 {
   "name": "@esmilo/yamato",
   "version": "1.0.0",
-  "description": " Express middleware to trim request body",
+  "description": "Express middleware to trim request body",
   "main": "index.js",
   "scripts": {
     "test": "npx jest"
